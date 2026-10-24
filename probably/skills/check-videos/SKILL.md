@@ -1,6 +1,6 @@
 ---
 name: check-videos
-description: Check on the person's Probably videos: what is in production, what waits on them, what is delivered. Use when they ask how their videos are doing, whether something is done, or to be told when a video changes.
+description: 'Check on the person''s Probably videos: what is in production, what waits on them, what is delivered. Use when they ask how their videos are doing, whether something is done, or to be told when a video changes.'
 ---
 
 Reads the person's videos and reports what each needs from them. Read the `probably` skill first for the tools and the spend gate. Reading spends nothing.

@@ -1,6 +1,6 @@
 ---
 name: ad-to-brief
-description: Turn a winning ad (a TikTok, Instagram Reel or YouTube Short link) into a Probably brief and a prepared video. Use when the person shares an ad or post link and wants one like it, its hook or pacing borrowed, or a brief written from it.
+description: 'Turn a winning ad (a TikTok, Instagram Reel or YouTube Short link) into a Probably brief and a prepared video. Use when the person shares an ad or post link and wants one like it, its hook or pacing borrowed, or a brief written from it.'
 ---
 
 Reads what Probably knows about the link, writes a brief that borrows what works without copying it, and prepares a video from it. Read the `probably` skill first for the tools, the spend gate and request keys.

@@ -1,6 +1,6 @@
 ---
 name: test-hooks
-description: Test several hooks for one product as Probably video variants, such as "test 5 hooks for this product". Use when the person wants hook variants, an A/B test of openings, or the same video with different first lines.
+description: 'Test several hooks for one product as Probably video variants, such as "test 5 hooks for this product". Use when the person wants hook variants, an A/B test of openings, or the same video with different first lines.'
 ---
 
 Makes one video for the product, then prepares variants of it that keep its research and remake everything from the copy on, each with its own hook. Read the `probably` skill first for the tools, the spend gate and request keys.

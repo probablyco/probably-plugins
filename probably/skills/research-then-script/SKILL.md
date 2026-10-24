@@ -1,6 +1,6 @@
 ---
 name: research-then-script
-description: Research a product with Probably's researcher, then have its writer turn the research into a script. Use when the person wants grounded research, angles or a script without a full video, or wants to feed Probably's research into their own pipeline.
+description: 'Research a product with Probably''s researcher, then have its writer turn the research into a script. Use when the person wants grounded research, angles or a script without a full video, or wants to feed Probably''s research into their own pipeline.'
 ---
 
 Runs two stage primitives in turn, `research` then `write_script`, and reads each result with `get_stage`. Read the `probably` skill first for the tools, the spend gate and request keys.

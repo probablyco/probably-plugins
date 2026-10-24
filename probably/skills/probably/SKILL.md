@@ -1,6 +1,6 @@
 ---
 name: probably
-description: Make AI UGC videos (TikTok, Reels, Shorts ads) with Probably's MCP tools. Use when the person asks to make, vary, test, research, script or check on a UGC video, or mentions Probably, a Space, or their videos in the studio.
+description: 'Make AI UGC videos (TikTok, Reels, Shorts ads) with Probably''s MCP tools. Use when the person asks to make, vary, test, research, script or check on a UGC video, or mentions Probably, a Space, or their videos in the studio.'
 ---
 
 Probably makes short-form UGC videos with a crew (researcher, writer, producer, editor, critics) behind one set of MCP tools. This skill is the reference every recipe in this plugin builds on: how to reach the tools, the spend gate, and how to read what comes back.
