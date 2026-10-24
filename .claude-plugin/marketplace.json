@@ -1,0 +1,14 @@
+{
+  "name": "probably",
+  "description": "Probably's plugins: AI UGC video production from Claude Code and Codex.",
+  "owner": { "name": "Probably", "url": "https://studio.probably.co" },
+  "plugins": [
+    {
+      "name": "probably",
+      "source": "./probably",
+      "description": "Make, test and track AI UGC videos with Probably's MCP server: recipes for hook tests, ad-to-brief, research and scripts, and checking on videos.",
+      "category": "productivity",
+      "homepage": "https://studio.probably.co/docs/plugin"
+    }
+  ]
+}
