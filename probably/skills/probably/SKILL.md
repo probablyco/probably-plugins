@@ -13,7 +13,7 @@ Probably makes short-form UGC videos with a crew (researcher, writer, producer, 
 
 ## The spend gate
 
-Every tool that starts paid work is a `prepare_*` tool (and on newer servers `research`, `write_script` and other stage tools) that spends nothing and answers with a `preview`, a `confirmationId` and, when the connection may not spend, a `confirmUrl`. Paid work starts only through `confirm_spend`.
+Every tool that starts paid work is a `prepare_*` tool (and on newer servers the stage tools `research`, `brainstorm`, `write_script` and `review`) that spends nothing and answers with a `preview`, a `confirmationId` and, when the connection may not spend, a `confirmUrl`. Paid work starts only through `confirm_spend`.
 
 1. Show the person the preview in plain words: what will be made, what it costs in credits, and whether their credits cover it.
 2. Ask, and wait for their yes in this conversation. A yes to an earlier preview, a standing instruction, or your own judgment is not a yes to this one.
@@ -37,5 +37,5 @@ Tools that change something take a `requestKey`. Make a new one (a UUID) for eac
 
 - `test-hooks`: test several hooks for one product as variants of a video.
 - `ad-to-brief`: turn a winning ad's link into a brief and a prepared video.
-- `research-then-script`: research a product, then write a script from it.
+- `research-then-script`: research a product, brainstorm hooks, write a script of a set length from a chosen hook, and get the critics' review.
 - `check-videos`: what is in production, what waits on the person, what is delivered.
