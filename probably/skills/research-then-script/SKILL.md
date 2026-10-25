@@ -1,9 +1,9 @@
 ---
 name: research-then-script
-description: 'Research a product with Probably''s researcher, brainstorm hooks from it, have its writer turn the research and a chosen hook into a script of a set length, and get the critics'' review. Use when the person wants grounded research, hooks, a script or a second opinion without a full video, or wants to feed Probably''s stages into their own pipeline.'
+description: 'Research a product with Probably''s researcher, brainstorm hooks from it, have its writer turn the research and a chosen hook into a script of a set length, get the critics'' review, and make a reviewed clip of a scene. Use when the person wants grounded research, hooks, a script or a second opinion without a full video, or wants to feed Probably''s stages into their own pipeline.'
 ---
 
-Runs stage primitives in turn on one video, `research`, `brainstorm`, `write_script` and optionally `review`, and reads each result with `get_stage`. Read the `probably` skill first for the tools, the spend gate and request keys.
+Runs stage primitives in turn on one video, `research`, `brainstorm`, `write_script` and optionally `review` and `generate_clip`, and reads each result with `get_stage`. Read the `probably` skill first for the tools, the spend gate and request keys.
 
 These stage tools are newer than the video tools. **Check `tools/list` first:** if `research`, `write_script` or `get_stage` is missing, tell the person this server doesn't offer stage tools yet, and offer a whole video instead (`prepare_video`, through the spend gate): its crew researches and writes the script on the way, and `get_video` shows what they did.
 
@@ -15,5 +15,6 @@ These stage tools are newer than the video tools. **Check `tools/list` first:** 
 6. **Prepare the script.** Call `write_script` on the same video, with `researchRevisionId`, the chosen hooks (brainstormed ones as `chosen`: the brainstorm's `revisionId` and the hooks' `indexes` from 0; the person's own lines as `hooks`; at most three in all), `lengthSeconds` when the person named a length, and a new `requestKey`, as its schema names them.
 7. **Pass the spend gate** again, then read the script with `get_stage` when it's done: the hook, the script by beat, the caption and the call to action, and what the critics said. If it ended `needs-review`, show its `findings` and the draft in `result`; the person decides in the studio, or you prepare it again with changes.
 8. **Review, if asked.** `review` takes the script's (or the hooks') `revisionId` on the same video, or a video or image the person uploaded (`asset`, from `list_assets`) against a brief; it goes through the spend gate like the rest, and `get_stage` returns the critics' decision, ballots and mandatory findings.
+9. **A clip of a scene, if asked and `generate_clip` is listed.** Write the scene `prompt` from the script (who, where, what happens, the camera) and agree it with the person, with the `line` said on camera; add a `still` or `references` from `list_assets` if they have images to use. Call it on the same video with a new `requestKey`; its preview says the seconds, one take's price and the takes held (the critics may ask for one remake). Pass the spend gate, then `get_stage` returns the clip, the route that made it, the critics' decision and `media.url`, a link that expires in minutes. A clip a route refused stops `blocked` with the reason: change the scene with the person and prepare it again.
 
-Done when the person has the research, the hooks and the reviewed script in the conversation (and the review, if asked), with the revision IDs, so any of them can be fed into `prepare_video` or their own tools.
+Done when the person has the research, the hooks and the reviewed script in the conversation (and the review and clip, if asked), with the revision IDs, so any of them can be fed into `prepare_video` or their own tools.
