@@ -1,7 +1,7 @@
 {
   "name": "probably",
   "displayName": "Probably",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make, test and track AI UGC videos with Probably's MCP server: recipes for hook tests, ad-to-brief, research and scripts, and checking on videos.",
   "author": { "name": "Probably", "url": "https://probably.co" },
   "homepage": "https://probably.co/docs/plugin",
