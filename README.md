@@ -1,6 +1,6 @@
 # Probably plugins
 
-[Probably](https://studio.probably.co) makes AI UGC videos (TikTok, Reels and
+[Probably](https://probably.co) makes AI UGC videos (TikTok, Reels and
 Shorts ads) with a crew of researchers, writers, producers, editors and
 critics. This repository is its marketplace for Claude Code, and its skills for
 Codex.
@@ -32,8 +32,8 @@ Add the MCP server to `~/.codex/config.toml` and sign in with
 
 ```toml
 [mcp_servers.probably]
-url = "https://studio.probably.co/api/mcp"
+url = "https://probably.co/api/mcp"
 ```
 
 The full guide, with API keys and what each recipe does, is at
-https://studio.probably.co/docs/plugin.
+https://probably.co/docs/plugin.

@@ -2,7 +2,7 @@
   "mcpServers": {
     "probably": {
       "type": "http",
-      "url": "https://studio.probably.co/api/mcp"
+      "url": "https://probably.co/api/mcp"
     }
   }
 }
